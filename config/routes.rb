@@ -6,7 +6,9 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   passwordless_for :users
-  passwordless_for :users, at: '/', as: :auth
+  #passwordless_for :users, at: '/', as: :auth
+  
+
   # Defines the root path route ("/")
   root "tasks#index"
 end

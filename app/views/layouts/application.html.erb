@@ -14,9 +14,9 @@
     TasksGenie
     <% if current_user.present? %>
       <%= current_user.email %>
-      <%= button_to 'Sign out', auth_sign_out_path, method: :delete %>
+      <%= button_to 'Sign out', users_sign_out_path, method: :delete %>
     <% else %>
-      <%= button_to 'Sign in', sign_in_path, method: :post %>
+      <%= link_to 'Sign in', users_sign_in_path ,  class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" %>
     <% end %>
     <%= yield %>
     
