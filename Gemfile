@@ -21,6 +21,8 @@ gem "countries"
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
 
+gem 'mailersend-ruby'
+
 gem "administrate"
 gem 'postmark-rails'
 
