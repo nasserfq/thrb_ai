@@ -1,5 +1,5 @@
 class UserMailer < ApplicationMailer
-	default from: 'Nasser <admin@thrb.xyz>' # this domain must be verified on your MailerSend dashboard
+	default from: 'admin@thrb.xyz' # this domain must be verified on your MailerSend dashboard
 	def welcome_email
 			@user = params[:user]
 			@url = 'https://mailersend.com/login'
