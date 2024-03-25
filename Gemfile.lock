@@ -185,6 +185,8 @@ GEM
     nio4r (2.7.1)
     nokogiri (1.16.3-x86_64-darwin)
       racc (~> 1.4)
+    nokogiri (1.16.3-x86_64-linux)
+      racc (~> 1.4)
     pagy (7.0.11)
     passwordless (1.5.0)
       bcrypt (>= 3.1.11)
@@ -275,6 +277,8 @@ GEM
     stringio (3.1.0)
     tailwindcss-rails (2.3.0-x86_64-darwin)
       railties (>= 6.0.0)
+    tailwindcss-rails (2.3.0-x86_64-linux)
+      railties (>= 6.0.0)
     thor (1.3.1)
     tilt (2.3.0)
     timeout (0.4.1)
@@ -302,6 +306,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin
+  x86_64-linux
 
 DEPENDENCIES
   activesupport
