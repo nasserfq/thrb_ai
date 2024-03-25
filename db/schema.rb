@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2023_12_18_145042) do
+ActiveRecord::Schema[7.1].define(version: 2024_03_24_202414) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -33,12 +33,29 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_18_145042) do
     t.boolean "completed"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "user_id", null: false
+    t.string "result"
+    t.string "property_type"
+    t.string "country"
+    t.string "city"
+    t.string "direction"
+    t.integer "meter_street"
+    t.string "transaction_type"
+    t.string "district"
+    t.integer "bedrooms"
+    t.integer "bathrooms"
+    t.integer "land_area"
+    t.decimal "property_price"
+    t.string "rent_duration"
+    t.string "selected_language"
+    t.decimal "price_per_meter"
   end
 
   create_table "users", force: :cascade do |t|
     t.string "email", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "user"
   end
 
 end

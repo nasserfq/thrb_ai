@@ -28,4 +28,109 @@
 #       enabled: "ON"
 
 en:
-  hello: "Hello world"
+  locales:
+    en: "English"
+    ar: "العربية"
+  country:
+    Saudi_Arabia: "Saudi Arabia"
+  layouts:
+    application:
+      let_ai_generate: "Let the artificial intelligence innovate in creating the marketing posts for your properties"
+      sub_let_ai_generate: "Start your journey with Thrb AI by signing in to our user-friendly platform, immersing yourself in a world where artificial intelligence and real estate marketing converge. Once you've logged in with your email, you'll be able to input your property details and let our advanced AI technology take the reins, analyzing your inputs and crafting innovative marketing posts that highlight the unique features of your properties. The result is a smooth, efficient process that saves you time and effort, delivering high-quality, engaging marketing content designed to attract potential buyers and renters to your property listings."
+      frequently_asked_questions: "Frequently asked questions"
+      real_estate_agent: "Do I still need a real estate agent?"
+      real_estate_agent_description: "Thrb AI is a powerful tool that could serve as a complete solution for many users. However, depending on your specific needs, the expertise of a real estate agent can provide additional value. We see Thrb AI working in harmony with professional agents, augmenting their skills with our AI technology."
+      handle_data_privacy: "How do you handle my data and respect my privacy?"
+      handle_data_privacy_description: "Your privacy is our priority. We ensure confidentiality and do not publish any account outputs without explicit permission. We adhere to strict data management practices for data protection. For more details, please refer to our Privacy Policy."
+      who_created_thrb_ai: "Who created Thrb AI?"
+      who_created_thrb_description: "Thrb AI was developed by me, Nasser Alqahtani, with valuable insights from industry professionals. The extensive use of AI technology in the development process allows us to provide Thrb AI's services at an affordable cost, ensuring the sustainability of the business."
+      thrb_ai_free: "Is Thrb AI free?"
+      thrb_ai_free_description: "Yes, Thrb AI is currently free. However, we may introduce pricing for additional features or for current features in the future."
+      thrbـai: "Thrb AI"
+      about_link : "About"
+      blog_link : "Blog"
+      links: "Links"
+      "pricing_link": "Pricing"
+      "login_link": "Log in"
+      "legal": "Legal"
+      "terms_service_link": "Terms of Service"
+      "privacy_policy_link": "Privacy Policy"
+      signـin_main_page: "Sign in"
+      sign_out_main_page: "Sign Out"
+  tasks:
+    index:
+      ai_marketing_posts: "The AI has generated marketing posts for your properties, which are displayed below."
+      revolutionize_your_real_estate_marketing: "Reimagine Your Real Estate Marketingw with Thrb AI"
+      revolutionize_your_real_estate_marketing_description: "Experience the power of AI in generating your real estate marketing posts. And the best part? It's absolutely FREE!"
+      try_thrb_ai_free: "Try Thrb AI for Free"
+    _task:
+      delete_button: "Delete"
+      copy_button: "Copy"
+      all_posts_button: "All posts"
+    _form:
+      apartment: "Apartment"
+      studio: "Studio"
+      house: "House"
+      building : "Building"
+      residential_land: "Residential Land"
+      agricultural_land: "Agricultural Land"
+      commercial_land: "Commercial Land"
+      industrial_land: "Industrial Land"
+      villa: "Villa"
+      compound: "Compound"
+      offices: "Offices"
+      land_area: "Add the area value in square meters"
+      price_per_meter: "Price per meter"
+      bedrooms: "Add number of bedrooms"
+      bathrooms: "Add number of bathrooms"
+      property_facing: "Add Property facing direction"
+      directions:
+          east: "East"
+          west: "West"
+          north: "North"
+          south: "South"
+          north_east: "North-East"
+          north_west: "North-West"
+          south_east: "South-East"
+          south_west: "South-West"
+      meter_street: "Add meter street"
+      for_sale: "For Sale"
+      for_rent: "For rent"
+      rent_duration: 
+          daily: "Daily"
+          monthly: "Monthly"
+          yearly: "Yearly"
+      property_price: "Add property price"
+      city: "Add city"
+      district: "Add district"
+      select_language: "Select language for results"
+      simple_description: "Close to groceries"
+      submit_button: "Start Creating!"
+  passwordless:
+    sessions:
+      new:
+        email:
+          label: "E-mail address"
+          placeholder: "user@example.com"
+        submit: "Sign in"
+      create:
+        email_sent: "We've sent you an email with a secret token and magic link"
+        not_found: "We couldn't find a user with that email address"
+        error: "An error occured"
+      show:
+        confirm: "Confirm"
+        
+      errors:
+        invalid_token: "Token is invalid"
+        session_expired: "Your session has expired, please sign in again."
+        token_claimed: "This link has already been used, try requesting the link again"
+      destroy:
+        signed_out: "Signed out successfully"
+    mailer:
+      sign_in:
+        subject: "Your Signing in"
+        body: |-
+          You can use this token to complete your sign in: %{token}
+
+          or alternatively you can use this link to sign in directly:
+          %{magic_link}

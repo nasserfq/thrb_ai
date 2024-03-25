@@ -1,0 +1,146 @@
+<!--
+<div class="flex justify-center pt-1">
+  <%= form_with(model: task, class: "mb-7") do |form| %>
+    <div class="mb-5">
+      <%= form.text_field :description, placeholder: "Add new task", class: "inline-block w-96 px-3 py-2 mt-2 shadow rounded-md border border-gray-200 outline-none" , required: true%>
+      <%= form.submit "Save", class: "btn py-2 ml-2 bg-blue-600 text-white" %>
+    </div>
+  <% end %>
+</div>
+-->
+<div class="flex justify-center pt-1">
+  <%= form_with(model: task, class: "mb-7") do |form| %>
+    <div class="mb-5">
+      <div class= "mx-auto max-w-2xl text-center">
+        <%= form.text_field :description, placeholder: "Add new task", class: "inline-block w-96 px-3 py-2 mt-2 shadow rounded-md border border-gray-200 outline-none" , required: true%>
+      </div>
+      <div class="mt-4 border-t border-gray-900/10 pt-8 md:flex md:items-center md:justify-between">
+      </div>
+      <div class= "mx-auto max-w-2xl text-center">
+        <div class="property-types relative flex items-start">
+          <div class= "mx-auto max-w-2xl text-center">
+            <%= form.radio_button :property_type, 'house' %> <%=t("tasks._form.house")%>
+          </div>
+          <div class= "mx-auto max-w-2xl text-center">
+            <%= form.radio_button :property_type, 'apartment' %> <%=t("tasks._form.apartment")%>
+          </div>
+          <div class= "mx-auto max-w-2xl text-center">
+            <%= form.radio_button :property_type, 'studio' %> <%=t("tasks._form.studio")%>
+          </div>
+          <div class= "mx-auto max-w-2xl text-center">
+            <%= form.radio_button :property_type, 'residential_land' %> <%=t("tasks._form.residential_land")%>
+          </div>
+          <div class= "mx-auto max-w-2xl text-center">
+            <%= form.radio_button :property_type, 'agricultural_land' %> <%=t("tasks._form.agricultural_land")%>
+          </div>
+          <div class= "mx-auto max-w-2xl text-center">
+            <%= form.radio_button :property_type, 'commercial_land' %> <%=t("tasks._form.commercial_land")%>
+          </div>
+          <div class= "mx-auto max-w-2xl text-center">
+            <%= form.radio_button :property_type, 'industrial_land' %> <%=t("tasks._form.industrial_land")%>
+          </div>
+          <div class= "mx-auto max-w-2xl text-center">
+            <%= form.radio_button :property_type, 'villa' %> <%=t("tasks._form.villa")%>
+          </div>
+          <div class= "mx-auto max-w-2xl text-center">
+            <%= form.radio_button :property_type, 'compound' %> <%=t("tasks._form.compound")%>
+          </div>
+          <div class= "mx-auto max-w-2xl text-center">
+            <%= form.radio_button :property_type, 'offices' %> <%=t("tasks._form.offices")%>
+          </div>
+        </div>
+        <div class="mt-4 border-t border-gray-900/10 pt-8 md:flex md:items-center md:justify-between">
+        </div>
+        <div class="transaction-types relative flex items-start">
+          <div class= "mx-auto max-w-2xl text-center">
+            <%= form.radio_button :transaction_type, 'for rent' %> <%=t("tasks._form.for_rent")%>
+          </div>
+          <div class= "mx-auto max-w-2xl text-center">
+            <%= form.radio_button :transaction_type, 'for sale' %> <%=t("tasks._form.for_sale")%>
+          </div>
+        </div>
+        <br>
+        <div class="rent-duration" style="display: none;">
+          <div class= "mx-auto max-w-2xl text-center">
+            <%= form.radio_button :rent_duration, 'daily' %> <%=t("tasks._form.rent_duration.daily")%>
+          </div>
+          <div class= "mx-auto max-w-2xl text-center">
+            <%= form.radio_button :rent_duration, 'monthly' %> <%=t("tasks._form.rent_duration.monthly")%>
+          </div>
+          <div class= "mx-auto max-w-2xl text-center">
+            <%= form.radio_button :rent_duration, 'yearly' %> <%=t("tasks._form.rent_duration.yearly")%>
+          </div>
+        </div>
+        <div class="mt-4 border-t border-gray-900/10 pt-8 md:flex md:items-center md:justify-between">
+        </div>
+        <div class= "mx-auto max-w-2xl text-center">
+          <%= form.number_field :land_area, placeholder: t("tasks._form.land_area"), class: "land-area-field inline-block w-96 px-3 py-2 mt-2 shadow rounded-md border border-gray-200 outline-none", required: true, step: 1 %>
+        </div>
+        <div class= "mx-auto max-w-2xl text-center">
+          <%= form.number_field :price_per_meter, placeholder: t("tasks._form.price_per_meter"), class: "price-per-meter-field inline-block w-96 px-3 py-2 mt-2 shadow rounded-md border border-gray-200 outline-none", required: true, step: 0.01 %>
+        </div>
+        <div class= "mx-auto max-w-2xl text-center">
+          <%= form.number_field :bedrooms, placeholder: t("tasks._form.bedrooms"), class: "bedrooms-field inline-block w-96 px-3 py-2 mt-2 shadow rounded-md border border-gray-200 outline-none",  step: 1 %>
+        </div>
+        <div class= "mx-auto max-w-2xl text-center">
+          <%= form.number_field :bathrooms, placeholder: t("tasks._form.bathrooms"), class: "bathrooms-field inline-block w-96 px-3 py-2 mt-2 shadow rounded-md border border-gray-200 outline-none",  step: 1 %>
+        </div>
+      </div>
+      <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-600 text-center">
+        <%=t("tasks._form.property_facing")%>
+      </p>
+      <div class= "mx-auto max-w-2xl text-center">
+        <%= form.select :direction, [t('tasks._form.directions.east'), t('tasks._form.directions.west'), t('tasks._form.directions.north'), t('tasks._form.directions.south'), t('tasks._form.directions.north_east'), t('tasks._form.directions.north_west'), t('tasks._form.directions.south_east'), t('tasks._form.directions.south_west')], {}, { class: 'inline-block w-96 px-3 py-2 mt-2 shadow rounded-md border border-gray-200 outline-none' } %>
+      </div>
+      <div class= "mx-auto max-w-2xl text-center">
+        <%= form.number_field :meter_street, placeholder: t("tasks._form.meter_street"), class: "meter-street-field inline-block w-96 px-3 py-2 mt-2 shadow rounded-md border border-gray-200 outline-none", required: true, step: 1 %>
+      </div>
+      <div class= "mx-auto max-w-2xl text-center">
+        <%= form.number_field :property_price, placeholder: t("tasks._form.property_price"), class: "property-price-field inline-block w-96 px-3 py-2 mt-2 shadow rounded-md border border-gray-200 outline-none", required: true, step: 0.01 %>
+      </div>
+      <div class= "mx-auto max-w-2xl text-center">
+        <div class="country">
+          <%= form.select :country, ISO3166::Country.all_translated(I18n.locale), { selected: ISO3166::Country.new('SA').translations[I18n.locale.to_s] }, { class: 'inline-block w-96 px-3 py-2 mt-2 shadow rounded-md border border-gray-200 outline-none' } %>
+        </div>
+        <%= form.text_field :city, placeholder: t("tasks._form.city"), class: "city-field inline-block w-96 px-3 py-2 mt-2 shadow rounded-md border border-gray-200 outline-none", required: true %>
+        <%= form.text_field :district, placeholder: t("tasks._form.district"), class: "district-field inline-block w-96 px-3 py-2 mt-2 shadow rounded-md border border-gray-200 outline-none", required: true %>
+        <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-600 text-center">
+          <%=t("tasks._form.select_language")%>
+        </p>
+        <div class="selected_language">
+          <%= form.select :selected_language, [t("locales.en"), t("locales.ar")], {}, { class: 'inline-block w-96 px-3 py-2 mt-2 shadow rounded-md border border-gray-200 outline-none' } %>
+        </div>
+      </div>
+      <div class= "mx-auto max-w-2xl text-center">
+        <%= form.submit t("tasks._form.submit_button"), class: "btn py-2 ml-2 bg-blue-600 text-white" %>
+      </div>
+    </div>
+    <div class="mt-4 border-t border-gray-900/10 pt-8 md:flex md:items-center md:justify-between">
+    </div>
+  <% end %>
+</div>
+<script>
+  document.querySelectorAll('.city-field, .district-field').forEach(function(input) {
+    input.addEventListener('input', function(e) {
+      var words = e.target.value.split(' ').filter(function(word) {
+        return word != '';
+      });
+
+      if (words.length > 2) {
+        e.target.value = words.slice(0, 2).join(' ');
+      }
+    });
+  });
+</script>
+<script>
+  document.querySelectorAll('.transaction-types input').forEach(function(input) {
+    input.addEventListener('change', function(e) {
+      var rentDurationDiv = document.querySelector('.rent-duration');
+      if (e.target.value == 'for rent') {
+        rentDurationDiv.style.display = 'block';
+      } else {
+        rentDurationDiv.style.display = 'none';
+      }
+    });
+  });
+</script>

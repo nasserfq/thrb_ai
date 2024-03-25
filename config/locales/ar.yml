@@ -1,0 +1,107 @@
+ar:
+  locales:
+    en: "English"
+    ar: "العربية"
+  country:
+    Saudi_Arabia: "المملكة العربية السعودية"
+  layouts:
+    application:
+      let_ai_generate: "دع الذكاء الاصطناعي يبدع في إنشاء المنشورات التسويقية للعقارات الخاصة بك"
+      sub_let_ai_generate: "ابدأ رحلتك مع ذرب للذكاء الاصطناعي بتسجيل الدخول إلى منصتنا السهلة الاستخدام، في عالم يجمع بين الذكاء الاصطناعي وتسويق العقارات. بمجرد تسجيل الدخول ببريدك الإلكتروني، ستتمكن من إدخال تفاصيل العقار الخاص بك ودع تكنولوجيا الذكاء الاصطناعي المتقدمة لدينا تتولى الأمر، حيث تقوم بتحليل مدخلاتك وصياغة منشورات تسويقية مبتكرة تبرز الميزات الفريدة للعقارات الخاصة بك. النتيجة هي عملية سلسة وفعالة توفر لك الوقت والجهد وتقدم محتوى تسويقي جذاب عالي الجودة مصمم لجذب المشترين والمستأجرين المحتملين لعروض العقارات الخاصة بك."
+      frequently_asked_questions: "الأسئلة المتكررة"
+      real_estate_agent: "هل ما زلت بحاجة إلى مسوق عقاري؟"
+      real_estate_agent_description: "ذرب للذكاء الاصطناعي هو أداة قوية يمكن أن تكون حلاً كاملاً للعديد من المستخدمين. ولكن، بناءً على احتياجاتك الخاصة، قد توفر خبرة وكيل العقارات قيمة إضافية. نرى ذرب للذكاء الاصطناعي يعمل بتناغم مع الوكلاء المحترفين، معززاً مهاراتهم بتكنولوجيا الذكاء الاصطناعي لدينا."
+      handle_data_privacy: "كيف تتعاملون مع بياناتي وتحترمون خصوصيتي؟"
+      handle_data_privacy_description: "خصوصيتك هي أولويتنا. نضمن السرية ولا ننشر أي نتائج للحسابات بدون إذن صريح. نلتزم بممارسات صارمة لإدارة البيانات لحماية البيانات. لمزيد من التفاصيل، يرجى الرجوع إلى سياسة الخصوصية الخاصة بنا."
+      who_created_thrb_ai: "من بنى ذرب للذكاء الاصطناعي؟"
+      who_created_thrb_description: "تم تطوير ذرب للذكاء الاصطناعي بواسطتي، ناصر القحطاني، مع رؤى قيمة من المحترفين في الصناعة. يتيح لنا الاستخدام الواسع لتكنولوجيا الذكاء الاصطناعي في عملية التطوير تقديم خدمات ذرب للذكاء الاصطناعي بتكلفة معقولة، مما يضمن استدامة الأعمال."
+      thrb_ai_free: "هل ذرب للذكاء الاصطناعي مجاني؟"
+      thrb_ai_free_description: "نعم، ذرب للذكاء الاصطناعي حالياً مجاني. ولكن، قد نقدم تسعيراً لميزات إضافية أو للميزات الحالية في المستقبل."
+      thrbـai: "ذرب للذكاء الإصطناعي"
+      about_link : "حول"
+      blog_link : "مدونة"
+      links: "روابط"
+      pricing_link: "التسعير"
+      login_link: "تسجيل الدخول"
+      legal: "قانوني"
+      terms_service_link: "شروط الخدمة"
+      privacy_policy_link: "سياسة الخصوصية"
+      signـin_main_page: "تسجيل الدخول"
+      sign_out_main_page: "تسجيل الخروج"
+  tasks:
+    index:
+      ai_marketing_posts: "لقد أنشأ الذكاء الاصطناعي منشورات تسويقية للعقارات الخاصة بك، والتي يتم عرضها بالأسفل."
+      revolutionize_your_real_estate_marketing: " أعد تصور تسويق العقارات الخاص بك مع ذرب للذكاء الإصطناعي"
+      revolutionize_your_real_estate_marketing_description: "جرب قوة الذكاء الاصطناعي في إنشاء منشورات تسويق العقارات الخاصة بك. والجزء الأفضل؟ إنه مجاني تمامًا!"
+      try_thrb_ai_free: "جرب ذرب للذكاء الإصصطناعي مجانًا"
+    _task:
+      delete_button: "حذف"
+      copy_button: "نسخ"
+      all_posts_button: "جميع المنشورات"
+    _form:
+      apartment: "شقة"
+      studio: "استوديو"
+      house: "منزل"
+      building : "عمارة"
+      residential_land: "أرض سكنية"
+      agricultural_land: "أرض زراعية"
+      commercial_land: "أرض تجارية"
+      industrial_land: "أرض صناعية"
+      villa: "فيلا"
+      compound: "مجمع سكني"
+      offices: "مكاتب"
+      land_area: "أضف المساحة بالمتر المربع"
+      price_per_meter: "سعر المتر"
+      bedrooms: "أضف عدد الغرف"
+      bathrooms: "أضف عدد الحمامات"
+      property_facing: "أضف اتجاه واجهة العقار"
+      directions:
+        east: "الشرق"
+        west: "الغرب"
+        north: "الشمال"
+        south: "الجنوب"
+        north_east: "شمال شرق"
+        north_west: "شمال غرب"
+        south_east: "جنوب شرق"
+        south_west: "جنوب غرب"
+      meter_street: "أضف عرض الشارع"
+      for_sale: "للبيع"
+      for_rent: "للإيجار"
+      rent_duration: 
+        daily: "يومي"
+        monthly: "شهري"
+        yearly: "سنوي"  
+      property_price: "أضف سعر العقار"
+      city: "أضف المدينة"
+      district: "أضف الحي"
+      select_language: "اختر اللغة للمخرجات"
+      submit_button: "ابدأ الإبداع!"
+
+  passwordless:
+    sessions:
+      new:
+        email:
+          label: "البريد الالكتروني"
+          placeholder: "user@example.com"
+        submit: "تسجيل الدخول"
+      create:
+        email_sent: "لقد أرسلنا لك رسالة بريد إلكتروني تحتوي على رمز سري ورابط سحري"
+        not_found: "لم نتمكن من العثور على مستخدم بهذا البريد الإلكتروني"
+        error: "حدث خطأ"
+      show:
+        confirm: "تأكيد"
+        
+      errors:
+        invalid_token: "الرمز السري غير صالح"
+        session_expired: "لقد انتهت جلستك، يرجى تسجيل الدخول مرة أخرى"
+        token_claimed: "This link has already been used, try requesting the link again"
+      destroy:
+        signed_out: "تم تسجيل الخروج بنجاح"
+    mailer:
+      sign_in:
+        subject: "Your Signing in"
+        body: |-
+          You can use this token to complete your sign in: %{token}
+
+          or alternatively you can use this link to sign in directly:
+          %{magic_link}

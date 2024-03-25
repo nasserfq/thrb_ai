@@ -25,7 +25,7 @@ Rails.application.configure do
 
   # Compress CSS using a preprocessor.
   # config.assets.css_compressor = :sass
-
+  
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
 
@@ -49,7 +49,7 @@ Rails.application.configure do
   # config.assume_ssl = true
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
-  config.force_ssl = true
+  config.force_ssl = false
 
   # Log to STDOUT by default
   config.logger = ActiveSupport::Logger.new(STDOUT)
@@ -69,7 +69,7 @@ Rails.application.configure do
 
   # Use a real queuing backend for Active Job (and separate queues per environment).
   # config.active_job.queue_adapter = :resque
-  # config.active_job.queue_name_prefix = "apptemplate_production"
+  # config.active_job.queue_name_prefix = "thrb_ai_production"
 
   config.action_mailer.perform_caching = false
 
@@ -79,7 +79,9 @@ Rails.application.configure do
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
-  config.i18n.fallbacks = true
+  
+  #!Nasser: from Gemini --> Ensure that I18n.fallbacks are configured appropriately in your environment configuration (e.g., config/environments/development.rb). If you want strict Arabic behavior, you might remove fallbacks or set them to false.
+  #config.i18n.fallbacks = true
 
   # Don't log any deprecations.
   config.active_support.report_deprecations = false
