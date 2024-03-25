@@ -7,8 +7,8 @@
 module Admin
   class ApplicationController < Administrate::ApplicationController
     #before_action :authenticate_admin
-    include Passwordless::ControllerHelpers
-    helper_method :current_user
+    # include Passwordless::ControllerHelpers
+    # helper_method :current_user
     http_basic_authenticate_with(
       name: Rails.application.credentials.ADMIN_NAME,
       password: Rails.application.credentials.ADMIN_PASSWORD,
@@ -17,16 +17,16 @@ module Admin
     #   @users = User.where("email = ?", email)
     # end
 
-    def current_user
-      @current_user ||= authenticate_by_session(User)
-    end
+    # def current_user
+    #   @current_user ||= authenticate_by_session(User)
+    # end
 
     # Used in listings, such as the `index` actions. It
     # restricts the scope of records that a user can access.
     # Returns an ActiveRecord scope.
-    def scoped_resource
-      super.where(user: current_user)
-    end
+    # def scoped_resource
+    #   super.where(user: current_user)
+    # end
 
     # Return true if the current user can access the given
     # resource, false otherwise.

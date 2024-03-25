@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
  include Passwordless::ControllerHelpers # <-- This!
   # (unless you already have it in your ApplicationController)
-  helper_method :current_user
+  #helper_method :current_user
   #passwordless_with :email
 
   def index
