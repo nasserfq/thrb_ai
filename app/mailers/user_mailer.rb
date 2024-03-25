@@ -3,6 +3,6 @@ class UserMailer < ApplicationMailer
 	def welcome_email
 			@user = params[:user]
 			@url = 'https://mailersend.com/login'
-			mail(to: [:email], subject: 'Hello from MailerSend!')
+			mail(to: [@user.email], subject: 'Hello from MailerSend!')
 	end
 end

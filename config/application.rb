@@ -23,7 +23,7 @@ module ThrbAi
       :address   => 'smtp.mailersend.net',
       :port      => 587,
       :user_name => 'MS_yPTeq1@thrb.xyz',
-      :password  => ENV['MAILERSEND_USER_PASSWORD'],
+      :password  => ENV['MAILERSEND_API_KEY'],
       :starttls => true
     }
     # config.action_mailer.default_url_options = { host: 'https://thrb-ai.onrender.com' }
