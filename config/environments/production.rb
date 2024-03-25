@@ -8,7 +8,7 @@ Rails.application.configure do
   #? Nasser: From alfhd
   config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present? || ENV['RENDER'].present?
   #!Nasser: Added for production to see how it goes.
-  config.action_mailer.delivery_method = :smtp
+  #config.action_mailer.delivery_method = :smtp
   #config.action_mailer.perform_deliveries = true
   # Code is not reloaded between requests.
   config.enable_reloading = false

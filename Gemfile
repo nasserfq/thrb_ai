@@ -22,6 +22,8 @@ gem "countries"
 gem "importmap-rails"
 
 gem "administrate"
+gem 'postmark-rails'
+
 gem "sassc-rails"
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem "turbo-rails"
