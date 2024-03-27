@@ -3,7 +3,8 @@ class Task < ApplicationRecord
 	#validates :completed, presence: true
 	#scope :for_current_user, ->(user) { where(user: user) }
 	#!Nasser: From GPT
-	belongs_to :user
+	#? Nasser:  will be uncomment soon
+	#belongs_to :user
 	#enum role: { system: 0, user: 20 }
 	
 end

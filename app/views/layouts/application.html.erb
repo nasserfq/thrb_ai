@@ -28,6 +28,8 @@
               </button>
             </div>
           </div>
+          <!--? Nasser:  will be uncomment soon-->
+          <!--
           <div class=" lg:flex lg:flex-1 lg:justify-end">
             <% if current_user.present? %>
               <div class="px-3 lg:px-8">
@@ -38,7 +40,9 @@
               <%= link_to t("layouts.application.signـin_main_page"), users_sign_in_path ,  class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" %>
             <% end %>
           </div>
+          -->
         </nav>
+        <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
       </header>
       <!-- Mobile menu, show/hide based on menu open state. -->
       <main class="isolate">
@@ -138,9 +142,12 @@
                 <li>
                   <%= link_to t("layouts.application.pricing_link"), "/", class: 'text-sm leading-6 text-gray-600 hover:text-gray-900' %>
                 </li>
+                <!--? Nasser:  will be uncomment soon-->
+                <!--
                 <li>
                   <%= link_to t("layouts.application.login_link"), "/", class: 'text-sm leading-6 text-gray-600 hover:text-gray-900' %>
                 </li>
+                -->
               </ul>
             </div>
             <div class= "mx-auto ">

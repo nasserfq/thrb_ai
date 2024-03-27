@@ -1,3 +1,5 @@
+<!--? Nasser:  will be uncomment soon-->
+<!-- 
 <% if current_user %>
   <div class="mt-4" >
     <%= render "form", task: @task %>
@@ -30,4 +32,22 @@
     </div>
   </div>
 <% end %>
+</div>
+
+-->
+<div class="mt-4" >
+  <%= render "form", task: @task %>
+</div>
+<div id="tasks">
+  <div class="mx-auto max-w-2xl text-center">
+    <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-3xl"> <%=t("tasks.index.ai_marketing_posts")%></h2>
+  </div>
+  <% if flash.now[:notice].present? %>
+    <%= render 'shared/flash' %>
+  <% end %>
+  <div class="mt-4 border-t border-gray-900/10 pt-8 md:flex md:items-center md:justify-between">
+    <div class="px-5" data-controller="tasks">
+      <%= render @tasks %>
+    </div>
+  </div>
 </div>

@@ -6,7 +6,8 @@ class User < ApplicationRecord
 
   passwordless_with :email # <-- here!
   #Nasser:From ChatGPT
-  has_many :tasks, dependent: :destroy  # Corrected association
+  #? Nasser:  will be uncomment soon
+ # has_many :tasks, dependent: :destroy  # Corrected association
 
 
   def self.fetch_resource_for_passwordless(email)

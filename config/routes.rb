@@ -16,7 +16,12 @@ Rails.application.routes.draw do
     passwordless_for :users
     passwordless_for :users, at: "/", as: :auth
 
-    resources :tasks
+    # Here we modify the resources :tasks block to include the custom collection route
+    resources :tasks do
+      collection do
+        get :fetch_country_states
+      end
+    end
     get "about", to: "users#about"
     get "privacy_policy", to: "users#privacy_policy"
     get "terms_of_service", to: "users#terms_of_service"

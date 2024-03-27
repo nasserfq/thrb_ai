@@ -16,15 +16,17 @@ gem "i18n"
 gem "puma"
 gem "passwordless"
 gem "tailwindcss-rails"
+gem "city-state"
 #? Nasser: From Cursor
 gem "countries"
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
-
+gem 'country_select'
 gem 'mailersend-ruby'
 
 gem "administrate"
 gem 'postmark-rails'
+# gem 'cities'
 
 gem "sassc-rails"
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
@@ -32,7 +34,7 @@ gem "turbo-rails"
 
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"
-
+gem 'requestjs-rails'
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 

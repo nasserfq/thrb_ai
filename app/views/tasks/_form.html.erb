@@ -11,9 +11,12 @@
 <div class="flex justify-center pt-1">
   <%= form_with(model: task, class: "mb-7") do |form| %>
     <div class="mb-5">
-      <div class= "mx-auto max-w-2xl text-center">
+      <!--? Nasser:  will be uncomment soon-->
+      <!--
+        <div class= "mx-auto max-w-2xl text-center">
         <%= form.text_field :description, placeholder: "Add new task", class: "inline-block w-96 px-3 py-2 mt-2 shadow rounded-md border border-gray-200 outline-none" , required: true%>
       </div>
+        -->
       <div class="mt-4 border-t border-gray-900/10 pt-8 md:flex md:items-center md:justify-between">
       </div>
       <div class= "mx-auto max-w-2xl text-center">
@@ -99,17 +102,32 @@
         <%= form.number_field :property_price, placeholder: t("tasks._form.property_price"), class: "property-price-field inline-block w-96 px-3 py-2 mt-2 shadow rounded-md border border-gray-200 outline-none", required: true, step: 0.01 %>
       </div>
       <div class= "mx-auto max-w-2xl text-center">
+        <div data-controller="select" data-select-url-value="<%= fetch_country_states_tasks_path %>" data-select-param-value="country">
+          <div class="mb-3">
+            <%= form.select :country, CS.countries.invert, { prompt: t("tasks._form.select_country") }, { class: 'form-select inline-block w-96 px-3 py-2 mt-2 shadow rounded-md border border-gray-200 outline-none', data: { action: "change->select#change" } } %>
+          </div>
+          <div class="mb-3">
+            <%= form.select :city, (form.object.country? ? CS.get(form.object.country) : []), {}, { id: nil, class: 'form-select inline-block w-96 px-3 py-2 mt-2 shadow rounded-md border border-gray-200 outline-none', data: { select_target: "select" } } %>
+          </div>
+        </div>
+        <!--? Nasser:  will be uncomment soon-->
+        <!--
         <div class="country">
           <%= form.select :country, ISO3166::Country.all_translated(I18n.locale), { selected: ISO3166::Country.new('SA').translations[I18n.locale.to_s] }, { class: 'inline-block w-96 px-3 py-2 mt-2 shadow rounded-md border border-gray-200 outline-none' } %>
         </div>
         <%= form.text_field :city, placeholder: t("tasks._form.city"), class: "city-field inline-block w-96 px-3 py-2 mt-2 shadow rounded-md border border-gray-200 outline-none", required: true %>
         <%= form.text_field :district, placeholder: t("tasks._form.district"), class: "district-field inline-block w-96 px-3 py-2 mt-2 shadow rounded-md border border-gray-200 outline-none", required: true %>
+        -->
         <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-600 text-center">
           <%=t("tasks._form.select_language")%>
         </p>
         <div class="selected_language">
           <%= form.select :selected_language, [t("locales.en"), t("locales.ar")], {}, { class: 'inline-block w-96 px-3 py-2 mt-2 shadow rounded-md border border-gray-200 outline-none' } %>
         </div>
+      </div>
+      <br>
+      <div class= "mx-auto max-w-2xl text-center relative flex items-center">
+        <div class="cf-turnstile" data-sitekey= "<%= Rails.application.credentials.CLOUDFLARE_TURNSTILE %>" data-callback="javascriptCallback"></div>
       </div>
       <div class= "mx-auto max-w-2xl text-center">
         <%= form.submit t("tasks._form.submit_button"), class: "btn py-2 ml-2 bg-blue-600 text-white" %>

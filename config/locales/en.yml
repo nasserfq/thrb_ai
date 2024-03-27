@@ -106,6 +106,7 @@ en:
       select_language: "Select language for results"
       simple_description: "Close to groceries"
       submit_button: "Start Creating!"
+      select_country: "Select a country"
   passwordless:
     sessions:
       new:

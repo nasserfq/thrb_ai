@@ -2,11 +2,11 @@ class TaskToDecisionJob < ApplicationJob
   queue_as :default
 
   #?Nasser: From Cursor - property_type being added.
+  #TaskToDecisionJob.perform_now(@task.id, @task.description, @task.property_type, @task.country, @task.city, @task.direction, @task.meter_street, @task.transaction_type, @task.rent_duration, @task.district, @task.land_area, @task.bedrooms, @task.bathrooms, @task.property_price, @task.selected_language, @task.price_per_meter)
   def perform(task_id, description, property_type, country, city, direction, meter_street, transaction_type, rent_duration, district, land_area, bedrooms, bathrooms, property_price, selected_language, price_per_meter)
     prompt_with_instruction = "You are an expert in real estate marketing. Your task is to provide a creative description for a property. Here are the details:\n\n" +
                               "- Property Type: #{property_type}\n" +
-                              "- Location of the property: This property is located in the country of #{country}, within the city of #{city}, and specifically in the district of #{district}. For example, if the property is in Riyadh, the district could be 'قرطبة'.\n" +
-                              "- Description of the property: #{description}\n" +
+                              "- Location of the property: This property is located in the country of #{country}, within the city of #{city} \n" +
                               "- Direction of the property: The property is facing #{direction}. This means the main entrance or facade of the property is oriented towards this direction.\n" +
                               "- Street Width in front of the property: The street in front of the property is #{meter_street} meters wide.\n" +
                               "- Land Area: The property has a land area of #{land_area} square meters.\n" +
@@ -14,11 +14,10 @@ class TaskToDecisionJob < ApplicationJob
                               "- Bathrooms: The property has #{bathrooms} bathrooms.\n" +
                               "- Property Price: The price of the property is #{property_price}.\n" +
                               "- Price per Meter: The price per meter of the property is #{price_per_meter}.\n" +
-                              "- Selected Language: The output of the AI model should be in #{selected_language}.\n" +
                               "- Transaction Type: The property transaction type is #{transaction_type}.\n" +
                               "- Rent Duration: If the property transaction type is for rent, the duration of the rent is #{rent_duration} (if applicable).\n\n" +
                               "Please note the following requirements:\n\n" +
-                              "- The result should be in Arabic, specifically in the Saudi Arabian dialect.\n" +
+                              "- The result should be in #{selected_language}.\n" +
                               "- The result should be readable and less than 450 tokens long.\n" +
                               "- Ignore any values that are empty or equal to zero.\n" +
                               "- If the transaction type is 'for rent', include the rent duration in the description. If it's 'for sale', mention that the property is for sale.\n\n" +
