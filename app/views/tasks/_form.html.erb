@@ -2,25 +2,25 @@
 <div class="flex justify-center pt-1">
   <%= form_with(model: task, class: "mb-7") do |form| %>
     <div class="mb-5">
-      <%= form.text_field :description, placeholder: "Add new task", class: "inline-block w-96 px-3 py-2 mt-2 shadow rounded-md border border-gray-200 outline-none" , required: true%>
+      <%= form.text_field :description, placeholder: "Add new task", class: "block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" , required: true%>
       <%= form.submit "Save", class: "btn py-2 ml-2 bg-blue-600 text-white" %>
     </div>
   <% end %>
 </div>
 -->
-<div class="flex justify-center pt-1">
-  <%= form_with(model: task, class: "mb-7") do |form| %>
-    <div class="mb-5">
-      <!--? Nasser:  will be uncomment soon-->
-      <!--
+<div class="space-y-12">
+  <div class="border-b border-gray-900/10 pb-12">
+    <%= form_with(model: task, class: "mb-7") do |form| %>
+      <div class="mb-5">
+        <!--? Nasser:  will be uncomment soon-->
+        <!--
         <div class= "mx-auto max-w-2xl text-center">
-        <%= form.text_field :description, placeholder: "Add new task", class: "inline-block w-96 px-3 py-2 mt-2 shadow rounded-md border border-gray-200 outline-none" , required: true%>
+        <%= form.text_field :description, placeholder: "Add new task", class: "block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" , required: true%>
       </div>
         -->
-      <div class="mt-4 border-t border-gray-900/10 pt-8 md:flex md:items-center md:justify-between">
-      </div>
-      <div class= "mx-auto max-w-2xl text-center">
-        <div class="property-types relative flex items-start">
+        <div class="mt-4 border-t border-gray-900/10 pt-8 md:flex md:items-center md:justify-between">
+        </div>
+        <div class= "mx-auto max-w-2xl text-center">
           <div class= "mx-auto max-w-2xl text-center">
             <%= form.radio_button :property_type, 'house' %> <%=t("tasks._form.house")%>
           </div>
@@ -77,52 +77,52 @@
         <div class="mt-4 border-t border-gray-900/10 pt-8 md:flex md:items-center md:justify-between">
         </div>
         <div class= "mx-auto max-w-2xl text-center">
-          <%= form.number_field :land_area, placeholder: t("tasks._form.land_area"), class: "land-area-field inline-block w-96 px-3 py-2 mt-2 shadow rounded-md border border-gray-200 outline-none", required: true, step: 1 %>
+          <%= form.number_field :land_area, placeholder: t("tasks._form.land_area"), class: "land-area-field block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6", required: true, step: 1 %>
         </div>
         <div class= "mx-auto max-w-2xl text-center">
-          <%= form.number_field :price_per_meter, placeholder: t("tasks._form.price_per_meter"), class: "price-per-meter-field inline-block w-96 px-3 py-2 mt-2 shadow rounded-md border border-gray-200 outline-none", required: true, step: 0.01 %>
+          <%= form.number_field :price_per_meter, placeholder: t("tasks._form.price_per_meter"), class: "price-per-meter-field block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6", required: true, step: 0.01 %>
         </div>
         <div class= "mx-auto max-w-2xl text-center">
-          <%= form.number_field :bedrooms, placeholder: t("tasks._form.bedrooms"), class: "bedrooms-field inline-block w-96 px-3 py-2 mt-2 shadow rounded-md border border-gray-200 outline-none",  step: 1 %>
+          <%= form.number_field :bedrooms, placeholder: t("tasks._form.bedrooms"), class: "bedrooms-field block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6",  step: 1 %>
         </div>
         <div class= "mx-auto max-w-2xl text-center">
-          <%= form.number_field :bathrooms, placeholder: t("tasks._form.bathrooms"), class: "bathrooms-field inline-block w-96 px-3 py-2 mt-2 shadow rounded-md border border-gray-200 outline-none",  step: 1 %>
+          <%= form.number_field :bathrooms, placeholder: t("tasks._form.bathrooms"), class: "bathrooms-field block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6",  step: 1 %>
         </div>
       </div>
       <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-600 text-center">
         <%=t("tasks._form.property_facing")%>
       </p>
       <div class= "mx-auto max-w-2xl text-center">
-        <%= form.select :direction, [t('tasks._form.directions.east'), t('tasks._form.directions.west'), t('tasks._form.directions.north'), t('tasks._form.directions.south'), t('tasks._form.directions.north_east'), t('tasks._form.directions.north_west'), t('tasks._form.directions.south_east'), t('tasks._form.directions.south_west')], {}, { class: 'inline-block w-96 px-3 py-2 mt-2 shadow rounded-md border border-gray-200 outline-none' } %>
+        <%= form.select :direction, [t('tasks._form.directions.east'), t('tasks._form.directions.west'), t('tasks._form.directions.north'), t('tasks._form.directions.south'), t('tasks._form.directions.north_east'), t('tasks._form.directions.north_west'), t('tasks._form.directions.south_east'), t('tasks._form.directions.south_west')], {}, { class: 'block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6' } %>
       </div>
       <div class= "mx-auto max-w-2xl text-center">
-        <%= form.number_field :meter_street, placeholder: t("tasks._form.meter_street"), class: "meter-street-field inline-block w-96 px-3 py-2 mt-2 shadow rounded-md border border-gray-200 outline-none", required: true, step: 1 %>
+        <%= form.number_field :meter_street, placeholder: t("tasks._form.meter_street"), class: "meter-street-field block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6", required: true, step: 1 %>
       </div>
       <div class= "mx-auto max-w-2xl text-center">
-        <%= form.number_field :property_price, placeholder: t("tasks._form.property_price"), class: "property-price-field inline-block w-96 px-3 py-2 mt-2 shadow rounded-md border border-gray-200 outline-none", required: true, step: 0.01 %>
+        <%= form.number_field :property_price, placeholder: t("tasks._form.property_price"), class: "property-price-field block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6", required: true, step: 0.01 %>
       </div>
       <div class= "mx-auto max-w-2xl text-center">
         <div data-controller="select" data-select-url-value="<%= fetch_country_states_tasks_path %>" data-select-param-value="country">
           <div class="mb-3">
-            <%= form.select :country, CS.countries.invert, { prompt: t("tasks._form.select_country") }, { class: 'form-select inline-block w-96 px-3 py-2 mt-2 shadow rounded-md border border-gray-200 outline-none', data: { action: "change->select#change" } } %>
+            <%= form.select :country, CS.countries.invert, { prompt: t("tasks._form.select_country") }, { class: 'form-select block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6', data: { action: "change->select#change" } } %>
           </div>
           <div class="mb-3">
-            <%= form.select :city, (form.object.country? ? CS.get(form.object.country) : []), {}, { id: nil, class: 'form-select inline-block w-96 px-3 py-2 mt-2 shadow rounded-md border border-gray-200 outline-none', data: { select_target: "select" } } %>
+            <%= form.select :city, (form.object.country? ? CS.get(form.object.country) : []), {}, { id: nil, class: 'form-select block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6', data: { select_target: "select" } } %>
           </div>
         </div>
         <!--? Nasser:  will be uncomment soon-->
         <!--
         <div class="country">
-          <%= form.select :country, ISO3166::Country.all_translated(I18n.locale), { selected: ISO3166::Country.new('SA').translations[I18n.locale.to_s] }, { class: 'inline-block w-96 px-3 py-2 mt-2 shadow rounded-md border border-gray-200 outline-none' } %>
+          <%= form.select :country, ISO3166::Country.all_translated(I18n.locale), { selected: ISO3166::Country.new('SA').translations[I18n.locale.to_s] }, { class: 'block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6' } %>
         </div>
-        <%= form.text_field :city, placeholder: t("tasks._form.city"), class: "city-field inline-block w-96 px-3 py-2 mt-2 shadow rounded-md border border-gray-200 outline-none", required: true %>
-        <%= form.text_field :district, placeholder: t("tasks._form.district"), class: "district-field inline-block w-96 px-3 py-2 mt-2 shadow rounded-md border border-gray-200 outline-none", required: true %>
+        <%= form.text_field :city, placeholder: t("tasks._form.city"), class: "city-field block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6", required: true %>
+        <%= form.text_field :district, placeholder: t("tasks._form.district"), class: "district-field block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6", required: true %>
         -->
         <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-600 text-center">
           <%=t("tasks._form.select_language")%>
         </p>
         <div class="selected_language">
-          <%= form.select :selected_language, [t("locales.en"), t("locales.ar")], {}, { class: 'inline-block w-96 px-3 py-2 mt-2 shadow rounded-md border border-gray-200 outline-none' } %>
+          <%= form.select :selected_language, [t("locales.en"), t("locales.ar")], {}, { class: 'block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6' } %>
         </div>
       </div>
       <br>
@@ -133,9 +133,8 @@
         <%= form.submit t("tasks._form.submit_button"), class: "btn py-2 ml-2 bg-blue-600 text-white" %>
       </div>
     </div>
-    <div class="mt-4 border-t border-gray-900/10 pt-8 md:flex md:items-center md:justify-between">
-    </div>
   <% end %>
+</div>
 </div>
 <script>
   document.querySelectorAll('.city-field, .district-field').forEach(function(input) {
