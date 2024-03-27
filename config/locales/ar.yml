@@ -37,7 +37,7 @@ ar:
     _task:
       delete_button: "حذف"
       copy_button: "نسخ"
-      all_posts_button: "جميع المنشورات"
+      all_posts_button: "الصفحة الرئيسية"
     _form:
       apartment: "شقة"
       studio: "استوديو"

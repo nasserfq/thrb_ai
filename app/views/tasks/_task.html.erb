@@ -13,7 +13,7 @@
         </div>
       </div>
       <div class="inline-block ml-2">
-        <%= link_to t("tasks._task.all_posts_button"), '/', class: "btn bg-blue-100" %>
+        <%= button_tag t("tasks._task.all_posts_button"), class: "btn bg-blue-100", onclick: "location.href='#{root_path}'" %>
       </div>
       <!--#? Nasser:  will be uncomment soon-->
       <!--#? 
