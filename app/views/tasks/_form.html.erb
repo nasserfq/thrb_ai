@@ -127,7 +127,7 @@
       </div>
       <br>
       <div class= "mx-auto max-w-2xl text-center relative flex items-center">
-        <div class="cf-turnstile" data-sitekey= "<%= Rails.application.credentials.CLOUDFLARE_TURNSTILE %>" data-callback="javascriptCallback"></div>
+        <%= cloudflare_turnstile %>
       </div>
       <div class= "mx-auto max-w-2xl text-center">
         <%= form.submit t("tasks._form.submit_button"), class: "btn py-2 ml-2 bg-blue-600 text-white" %>

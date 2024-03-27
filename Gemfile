@@ -23,7 +23,7 @@ gem "countries"
 gem "importmap-rails"
 gem 'country_select'
 gem 'mailersend-ruby'
-
+gem 'rails_cloudflare_turnstile'
 gem "administrate"
 gem 'postmark-rails'
 # gem 'cities'
