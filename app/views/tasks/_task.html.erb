@@ -1,19 +1,19 @@
 <div class="block" >
   <div class="w-full">
     <turbo-frame id="<%= dom_id task %>" class="block" >
-      <%= form_with(model: task, class:"group relative bg-blue-200 p-6 rounded-lg focus-within:ring-2") do |form| %>
+      <%= form_with(model: task, class:"group relative bg-blue-200 p-2 rounded-lg focus-within:ring-1") do |form| %>
         <%= task.result %>
       <% end %>
-      <div class="inline-block ml-2 btn bg-green-100">
+      <div class="inline-block ml-2">
         <div data-controller="copy-button">
           <input type="hidden"  data-copy-button-target="source" value="<%= task.result %>">
-          <button data-action="click->copy-button#copy" >
+          <button data-action="click->copy-button#copy", class="rounded-md bg-green-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-500" >
             <%=t("tasks._task.copy_button")%>
           </button>
         </div>
       </div>
       <div class="inline-block ml-2">
-        <%= button_tag t("tasks._task.all_posts_button"), class: "btn bg-blue-100", onclick: "location.href='#{root_path}'" %>
+        <%= button_tag t("tasks._task.all_posts_button"), class: "rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500", onclick: "location.href='#{root_path}'" %>
       </div>
       <!--#? Nasser:  will be uncomment soon-->
       <!--#? 
