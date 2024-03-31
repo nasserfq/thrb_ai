@@ -18,15 +18,15 @@
             <div class="right-1 flex flex-row items-center p-2 m-2">
               <a href="/" class="-m-1.5 p-1">
                 <span class="sr-only">Aqarat AI - عقارات للذكاء الأصطناعي </span>
-                <%= image_tag("logo.png", class: "h-12 w-auto" , alt: 'Aqarat AI') %>
+                <%= image_tag("logo.png", class: "w-16 md:w-32 lg:w-48" , alt: 'Aqarat AI') %>
               </a>
             </div>
             <div class="right-1 flex flex-row items-center">
               <button class="flex flex-row items-center border border-gray-300 p-4 text-sm font-medium text-gray-700 hover:bg-gray-100 focus:bg-gray-200 focus:outline-none">
-                <img src="https://img.icons8.com/color/48/usa-circular.png" class="h-5 w-5" /><%= link_to "English", { locale: :en }%>
+                <img src="https://img.icons8.com/color/48/usa-circular.png" class="h-5 w-5 mr-2" /><%= link_to "English", { locale: :en }, class: "px-2" %>
               </button>
               <button class="flex flex-row items-center border border-gray-300 p-4 text-sm font-medium text-gray-700 hover:bg-gray-100 focus:bg-gray-200 focus:outline-none">
-                <img src="https://img.icons8.com/color/48/saudi-arabia-circular.png" class="h-5 w-5" /><%= link_to "العربية", { locale: :ar } %>
+                <img src="https://img.icons8.com/color/48/saudi-arabia-circular.png" class="h-5 w-5 mr-2" /><%= link_to "العربية", { locale: :ar }, class: "px-2" %>
               </button>
             </div>
           </div>
