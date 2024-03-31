@@ -51,7 +51,7 @@ class TasksController < ApplicationController
           puts "selected_language: #{@task.selected_language}"
           puts "price_per_meter: #{@task.price_per_meter}"
           TaskToDecisionJob.perform_now(@task.id, @task.description, @task.property_type, @task.country, @task.city, @task.direction, @task.meter_street, @task.transaction_type, @task.rent_duration, @task.district, @task.land_area, @task.bedrooms, @task.bathrooms, @task.property_price, @task.selected_language, @task.price_per_meter)
-          redirect_to @task, notice: "A decision is being generated. Please wait a few minutes."
+          redirect_to @task
         end
       else
         format.html { render :new, status: :unprocessable_entity }
