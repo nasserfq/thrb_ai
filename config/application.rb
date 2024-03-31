@@ -35,7 +35,7 @@ module ThrbAi
     config.i18n.load_path += Dir[Rails.root.join("my", "locales", "*.{rb,yml}")]
     #! Nasser : i18n from Gemini
     config.i18n.available_locales = [:en, :ar]
-    config.i18n.default_locale = :ar # Set your default language
+    config.i18n.default_locale = :en # Set your default language
     config.assets.css_compressor = nil
     # I18n.load_path += Dir[File.expand_path("config/locales") + "/*.yml"]
     # Configuration for the application, engines, and railties goes here.
