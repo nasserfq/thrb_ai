@@ -6,8 +6,6 @@ class ApplicationController < ActionController::Base
   helper_method :current_user
   #before_action :set_locale
 
-  
-
   def current_user
     @current_user ||= authenticate_by_session(User)
   end
@@ -36,4 +34,5 @@ class ApplicationController < ActionController::Base
     I18n.locale = params[:locale] || session[:locale] || I18n.default_locale
     session[:locale] = I18n.locale
   end
+
 end

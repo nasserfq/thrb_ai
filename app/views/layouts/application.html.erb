@@ -20,12 +20,20 @@
               <%= image_tag("logo.png", class: "h-8 w-auto" , alt: 'Aqarat AI') %>
             </a>
           </div>
-          <div class="right-1 flex flex-row items-center">
-            <button class="flex flex-row items-center border border-gray-300 p-4 text-sm font-medium text-gray-700 hover:bg-gray-100 focus:bg-gray-200 focus:outline-none">
-              <img src="https://img.icons8.com/color/48/usa-circular.png" class="h-5 w-5 mr-2 md:mr-4" /><%= link_to "English", { locale: :en }, class: "px-2 md:px-4" %>
+          <div class="flex flex-row items-center right-1 ">
+            <button class="p-2 flex flex-row items-center border border-gray-300 text-sm font-medium text-gray-700 hover:bg-gray-100 focus:bg-gray-200 focus:outline-none">
+              <span class="ml-1">
+                <%= link_to root_path(locale: :en), class: "w-5 h-5" do %>
+                  <img src="https://img.icons8.com/color/48/usa-circular.png" class="w-5 h-5" />
+                <% end %>
+              </span>
             </button>
-            <button class="flex flex-row items-center border border-gray-300 p-4 text-sm font-medium text-gray-700 hover:bg-gray-100 focus:bg-gray-200 focus:outline-none">
-              <img src="https://img.icons8.com/color/48/saudi-arabia-circular.png" class="h-5 w-5 mr-2 md:mr-4" /><%= link_to "العربية", { locale: :ar }, class: "px-2 md:px-4" %>
+            <button class="p-2 flex flex-row items-center border border-gray-300 text-sm font-medium text-gray-700 hover:bg-gray-100 focus:bg-gray-200 focus:outline-none ">
+              <span class="ml-1">
+                <%= link_to root_path(locale: :ar), class: "w-5 h-5" do %>
+                  <img src="https://img.icons8.com/color/48/saudi-arabia-circular.png" class="w-5 h-5" />
+                <% end %>
+              </span>
             </button>
           </div>
           <!--? Nasser:  will be uncomment soon-->
