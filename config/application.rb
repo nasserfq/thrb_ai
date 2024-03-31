@@ -17,7 +17,7 @@ module ThrbAi
     config.autoload_lib(ignore: %w(assets tasks))
 
     #Passwordless mailer
-    config.action_mailer.default_url_options = { host: "www.thrb.xyz" }
+    config.action_mailer.default_url_options = { host: "www.aqaratai.com" }
     config.action_mailer.delivery_method = :smtp
     config.action_mailer.smtp_settings = {
       :address   => 'smtp.mailersend.net',
@@ -29,7 +29,7 @@ module ThrbAi
     # config.action_mailer.default_url_options = { host: 'https://thrb-ai.onrender.com' }
     # config.action_mailer.delivery_method = :postmark
     # config.action_mailer.postmark_settings = { :api_token => "#{Rails.application.credentials.POSTMARK_API}" }
-    routes.default_url_options[:host] ||= "www.thrb.xyz"
+    routes.default_url_options[:host] ||= "www.aqaratai.com"
     # Where the I18n library should search for translation files
     #! Nasser : from https://guides.rubyonrails.org/i18n.html#configure-the-i18n-module
     config.i18n.load_path += Dir[Rails.root.join("my", "locales", "*.{rb,yml}")]

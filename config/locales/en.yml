@@ -36,17 +36,17 @@ en:
   layouts:
     application:
       let_ai_generate: "Let the artificial intelligence innovate in creating the marketing posts for your properties"
-      sub_let_ai_generate: "Start your journey with Thrb AI by signing in to our user-friendly platform, immersing yourself in a world where artificial intelligence and real estate marketing converge. Once you've logged in with your email, you'll be able to input your property details and let our advanced AI technology take the reins, analyzing your inputs and crafting innovative marketing posts that highlight the unique features of your properties. The result is a smooth, efficient process that saves you time and effort, delivering high-quality, engaging marketing content designed to attract potential buyers and renters to your property listings."
+      sub_let_ai_generate: "Start your journey with Aqarat AI by signing in to our user-friendly platform, immersing yourself in a world where artificial intelligence and real estate marketing converge. Once you've logged in with your email, you'll be able to input your property details and let our advanced AI technology take the reins, analyzing your inputs and crafting innovative marketing posts that highlight the unique features of your properties. The result is a smooth, efficient process that saves you time and effort, delivering high-quality, engaging marketing content designed to attract potential buyers and renters to your property listings."
       frequently_asked_questions: "Frequently asked questions"
       real_estate_agent: "Do I still need a real estate agent?"
-      real_estate_agent_description: "Thrb AI is a powerful tool that could serve as a complete solution for many users. However, depending on your specific needs, the expertise of a real estate agent can provide additional value. We see Thrb AI working in harmony with professional agents, augmenting their skills with our AI technology."
+      real_estate_agent_description: "Aqarat AI is a powerful tool that could serve as a complete solution for many users. However, depending on your specific needs, the expertise of a real estate agent can provide additional value. We see Aqarat AI working in harmony with professional agents, augmenting their skills with our AI technology."
       handle_data_privacy: "How do you handle my data and respect my privacy?"
       handle_data_privacy_description: "Your privacy is our priority. We ensure confidentiality and do not publish any account outputs without explicit permission. We adhere to strict data management practices for data protection. For more details, please refer to our Privacy Policy."
-      who_created_thrb_ai: "Who created Thrb AI?"
-      who_created_thrb_description: "Thrb AI was developed by me, Nasser Alqahtani, with valuable insights from industry professionals. The extensive use of AI technology in the development process allows us to provide Thrb AI's services at an affordable cost, ensuring the sustainability of the business."
-      thrb_ai_free: "Is Thrb AI free?"
-      thrb_ai_free_description: "Yes, Thrb AI is currently free. However, we may introduce pricing for additional features or for current features in the future."
-      thrbـai: "Thrb AI"
+      who_created_thrb_ai: "Who created Aqarat AI?"
+      who_created_thrb_description: "Aqarat AI was developed by me, Nasser Alqahtani, with valuable insights from industry professionals. The extensive use of AI technology in the development process allows us to provide Aqarat AI's services at an affordable cost, ensuring the sustainability of the business."
+      thrb_ai_free: "Is Aqarat AI free?"
+      thrb_ai_free_description: "Yes, Aqarat AI is currently free. However, we may introduce pricing for additional features or for current features in the future."
+      thrbـai: "Aqarat AI"
       about_link : "About"
       blog_link : "Blog"
       links: "Links"
@@ -60,9 +60,9 @@ en:
   tasks:
     index:
       ai_marketing_posts: "The AI has generated marketing posts for your properties, which are displayed below."
-      revolutionize_your_real_estate_marketing: "Reimagine Your Real Estate Marketingw with Thrb AI"
+      revolutionize_your_real_estate_marketing: "Reimagine Your Real Estate Marketingw with Aqarat AI"
       revolutionize_your_real_estate_marketing_description: "Experience the power of AI in generating your real estate marketing posts. And the best part? It's absolutely FREE!"
-      try_thrb_ai_free: "Try Thrb AI for Free"
+      try_thrb_ai_free: "Try Aqarat AI for Free"
     _task:
       delete_button: "Delete"
       copy_button: "Copy"

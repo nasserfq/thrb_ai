@@ -5,14 +5,14 @@ class TestMailer < ApplicationMailer
   #
   #   en.test_mailer.hello.subject
   #
-  default from: "admin@thrb.xyz"
+  default from: "admin@aqaratai.com"
 
   def hello
     mail(
-      subject: "Hello from Thrb AI",
+      subject: "Hello from Aqarat AI",
       to: "nonq70007@gmail.com",
-      from: "admin@thrb.xyz",
-      html_body: "<strong>Hello</strong> dear Thrb AI.",
+      from: "admin@aqaratai.com",
+      html_body: "<strong>Hello</strong> dear Aqarat AI.",
       track_opens: "true",
       message_stream: "broadcast",
     )
