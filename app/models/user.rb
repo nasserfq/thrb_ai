@@ -9,6 +9,7 @@ class User < ApplicationRecord
   #? Nasser:  will be uncomment soon
  # has_many :tasks, dependent: :destroy  # Corrected association
 
+ 
 
   def self.fetch_resource_for_passwordless(email)
     find_or_create_by(email:)
